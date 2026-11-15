@@ -1,0 +1,319 @@
+{
+  "verifiedAt": "2026-11-15T04:02:32.547Z",
+  "note": "Real NASA observations; hypothetical farmer pH 6.5, usable irrigation 300 mm and gentle slope. Not a measured farm case.",
+  "input": {
+    "farm": {
+      "name": "Verification only",
+      "latitude": 33.85,
+      "longitude": 35.9,
+      "plantingMonth": 3,
+      "plantingYear": 2025
+    },
+    "soil": {
+      "ph": 6.5
+    },
+    "priorities": {
+      "irrigation": "irrigated",
+      "seasonalLimitMm": 300,
+      "slope": "gentle",
+      "category": "any"
+    }
+  },
+  "parameters": {
+    "dataset": "NASA POWER meteorological parameters (primarily MERRA-2 assimilation)",
+    "apiUrl": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CT2M_MIN%2CPRECTOTCORR%2CRH2M%2CALLSKY_SFC_SW_DWN%2CWS2M%2CPS&community=AG&latitude=33.85&longitude=35.9&start=20250301&end=20250731&format=JSON&time-standard=LST",
+    "requestedParameters": [
+      "T2M",
+      "T2M_MAX",
+      "T2M_MIN",
+      "PRECTOTCORR",
+      "RH2M",
+      "ALLSKY_SFC_SW_DWN",
+      "WS2M",
+      "PS"
+    ],
+    "units": {
+      "T2M": "C",
+      "T2M_MAX": "C",
+      "T2M_MIN": "C",
+      "PRECTOTCORR": "mm/day",
+      "RH2M": "%",
+      "ALLSKY_SFC_SW_DWN": "MJ/m^2/day",
+      "WS2M": "m/s",
+      "PS": "kPa"
+    },
+    "requestedCoordinates": {
+      "latitude": 33.85,
+      "longitude": 35.9
+    },
+    "returnedCoordinates": [
+      35.9,
+      33.85,
+      452.18
+    ],
+    "timeStandard": "LST",
+    "spatialResolution": "Parameter-dependent POWER native grid.",
+    "spatialNote": "Regional gridded observations; not field sensors or future weather."
+  },
+  "requestedPeriod": {
+    "start": "2025-03-01",
+    "end": "2025-07-31"
+  },
+  "results": [
+    {
+      "crop": "Common bean",
+      "period": {
+        "start": "2025-03-01",
+        "end": "2025-05-29"
+      },
+      "soil": 100,
+      "climate": 100,
+      "rainfallMm": 76.80000000000004,
+      "et0Mm": 385.1015270869381,
+      "etcMm": 336.1125396635113,
+      "effectiveRainfallMm": 26.342,
+      "irrigationMm": 300,
+      "deficitMm": 9.770539663511329,
+      "waterScore": 97.09307493457614,
+      "finalScore": 99.4,
+      "appliedWeights": {
+        "soil": 0.5,
+        "climate": 0.3,
+        "water": 0.2
+      },
+      "missing": []
+    },
+    {
+      "crop": "Cucumber",
+      "period": {
+        "start": "2025-03-01",
+        "end": "2025-06-13"
+      },
+      "soil": 100,
+      "climate": 100,
+      "rainfallMm": 77.61000000000006,
+      "et0Mm": 477.7071711710188,
+      "etcMm": 418.89006253313795,
+      "effectiveRainfallMm": 26.342,
+      "irrigationMm": 300,
+      "deficitMm": 92.54806253313797,
+      "waterScore": 77.90635997104452,
+      "finalScore": 95.6,
+      "appliedWeights": {
+        "soil": 0.5,
+        "climate": 0.3,
+        "water": 0.2
+      },
+      "missing": []
+    },
+    {
+      "crop": "Tomato",
+      "period": {
+        "start": "2025-03-01",
+        "end": "2025-07-23"
+      },
+      "soil": 100,
+      "climate": 100,
+      "rainfallMm": 77.63000000000007,
+      "et0Mm": 750.5165617562491,
+      "etcMm": 729.1811873317816,
+      "effectiveRainfallMm": 26.342,
+      "irrigationMm": 300,
+      "deficitMm": 402.83918733178166,
+      "waterScore": 44.75458304048545,
+      "finalScore": 89,
+      "appliedWeights": {
+        "soil": 0.5,
+        "climate": 0.3,
+        "water": 0.2
+      },
+      "missing": []
+    },
+    {
+      "crop": "Potato",
+      "period": {
+        "start": "2025-03-01",
+        "end": "2025-07-23"
+      },
+      "soil": 87,
+      "climate": 100,
+      "rainfallMm": 77.63000000000007,
+      "et0Mm": 750.5165617562491,
+      "etcMm": 713.443417805275,
+      "effectiveRainfallMm": 26.342,
+      "irrigationMm": 300,
+      "deficitMm": 387.101417805275,
+      "waterScore": 45.74181944293594,
+      "finalScore": 82.6,
+      "appliedWeights": {
+        "soil": 0.5,
+        "climate": 0.3,
+        "water": 0.2
+      },
+      "missing": []
+    },
+    {
+      "crop": "Wheat",
+      "period": {
+        "start": "2025-03-01",
+        "end": "2025-07-13"
+      },
+      "soil": 100,
+      "climate": 50,
+      "rainfallMm": 77.62000000000006,
+      "et0Mm": 685.1145635607347,
+      "etcMm": 601.2763408936638,
+      "effectiveRainfallMm": 26.342,
+      "irrigationMm": 300,
+      "deficitMm": 274.93434089366383,
+      "waterScore": 54.27487792301374,
+      "finalScore": 75.9,
+      "appliedWeights": {
+        "soil": 0.5,
+        "climate": 0.3,
+        "water": 0.2
+      },
+      "missing": []
+    }
+  ],
+  "rotationPlans": [
+    {
+      "id": "bean-cucumber-bean",
+      "sequence": [
+        {
+          "id": "bean",
+          "name": "Common bean",
+          "scientificName": "Phaseolus vulgaris",
+          "family": "Fabaceae",
+          "category": "legume"
+        },
+        {
+          "id": "cucumber",
+          "name": "Cucumber",
+          "scientificName": "Cucumis sativus",
+          "family": "Cucurbitaceae",
+          "category": "vegetable"
+        },
+        {
+          "id": "bean",
+          "name": "Common bean",
+          "scientificName": "Phaseolus vulgaris",
+          "family": "Fabaceae",
+          "category": "legume"
+        }
+      ],
+      "score": 97,
+      "breakdown": {
+        "meanCropScore": 98,
+        "transitionCompatibility": 90,
+        "formula": "0.85 × mean crop score + 0.15 × transition compatibility",
+        "formulaId": "rotation-prototype-v1",
+        "assumptions": [
+          "Long-term soil change is not modeled.",
+          "Family transition is a screening indicator, not a pest-safety guarantee."
+        ]
+      },
+      "benefit": "2 crop families across three opportunities.",
+      "risk": "Different families can still share pests; local review remains necessary.",
+      "status": "preliminary",
+      "water": "Uses updated crop water screening where available for the selected observation season only. Later seasons need separate weather and irrigation budgets; this plan does not sum or reuse the irrigation allocation.",
+      "missing": [
+        "Local sowing dates",
+        "Pest-specific return intervals",
+        "Separate water budgets and observations for each future season"
+      ]
+    },
+    {
+      "id": "cucumber-bean-cucumber",
+      "sequence": [
+        {
+          "id": "cucumber",
+          "name": "Cucumber",
+          "scientificName": "Cucumis sativus",
+          "family": "Cucurbitaceae",
+          "category": "vegetable"
+        },
+        {
+          "id": "bean",
+          "name": "Common bean",
+          "scientificName": "Phaseolus vulgaris",
+          "family": "Fabaceae",
+          "category": "legume"
+        },
+        {
+          "id": "cucumber",
+          "name": "Cucumber",
+          "scientificName": "Cucumis sativus",
+          "family": "Cucurbitaceae",
+          "category": "vegetable"
+        }
+      ],
+      "score": 96,
+      "breakdown": {
+        "meanCropScore": 97,
+        "transitionCompatibility": 90,
+        "formula": "0.85 × mean crop score + 0.15 × transition compatibility",
+        "formulaId": "rotation-prototype-v1",
+        "assumptions": [
+          "Long-term soil change is not modeled.",
+          "Family transition is a screening indicator, not a pest-safety guarantee."
+        ]
+      },
+      "benefit": "2 crop families across three opportunities.",
+      "risk": "Different families can still share pests; local review remains necessary.",
+      "status": "preliminary",
+      "water": "Uses updated crop water screening where available for the selected observation season only. Later seasons need separate weather and irrigation budgets; this plan does not sum or reuse the irrigation allocation.",
+      "missing": [
+        "Local sowing dates",
+        "Pest-specific return intervals",
+        "Separate water budgets and observations for each future season"
+      ]
+    },
+    {
+      "id": "tomato-bean-cucumber",
+      "sequence": [
+        {
+          "id": "tomato",
+          "name": "Tomato",
+          "scientificName": "Solanum lycopersicum",
+          "family": "Solanaceae",
+          "category": "vegetable"
+        },
+        {
+          "id": "bean",
+          "name": "Common bean",
+          "scientificName": "Phaseolus vulgaris",
+          "family": "Fabaceae",
+          "category": "legume"
+        },
+        {
+          "id": "cucumber",
+          "name": "Cucumber",
+          "scientificName": "Cucumis sativus",
+          "family": "Cucurbitaceae",
+          "category": "vegetable"
+        }
+      ],
+      "score": 94,
+      "breakdown": {
+        "meanCropScore": 95,
+        "transitionCompatibility": 90,
+        "formula": "0.85 × mean crop score + 0.15 × transition compatibility",
+        "formulaId": "rotation-prototype-v1",
+        "assumptions": [
+          "Long-term soil change is not modeled.",
+          "Family transition is a screening indicator, not a pest-safety guarantee."
+        ]
+      },
+      "benefit": "Three crop families create a varied sequence.",
+      "risk": "Different families can still share pests; local review remains necessary.",
+      "status": "preliminary",
+      "water": "Uses updated crop water screening where available for the selected observation season only. Later seasons need separate weather and irrigation budgets; this plan does not sum or reuse the irrigation allocation.",
+      "missing": [
+        "Local sowing dates",
+        "Pest-specific return intervals",
+        "Separate water budgets and observations for each future season"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,562 @@
+[
+  {
+    "id": "tomato",
+    "commonName": "Tomato",
+    "scientificName": "Solanum lycopersicum",
+    "family": "Solanaceae",
+    "category": "vegetable",
+    "plantingWindow": {
+      "months": [
+        2,
+        3,
+        4,
+        8,
+        9
+      ],
+      "status": "prototype-assumption",
+      "sourceId": null
+    },
+    "growthDurationDays": {
+      "minimum": 70,
+      "maximum": 140,
+      "sourceId": "ecocrop-tomato-1379"
+    },
+    "soilRequirements": {
+      "ph": {
+        "minimum": 5,
+        "optimalLow": 5.5,
+        "optimalHigh": 6.8,
+        "maximum": 7.5,
+        "unit": "pH",
+        "sourceId": "ecocrop-tomato-1379"
+      },
+      "salinity": {
+        "eceThreshold": null,
+        "slopePercentPerDsM": null,
+        "unit": "dS/m ECe",
+        "sourceId": null
+      },
+      "texture": {
+        "preferred": [],
+        "sourceId": null
+      }
+    },
+    "temperatureRequirements": {
+      "minimum": 7,
+      "optimalLow": 20,
+      "optimalHigh": 27,
+      "maximum": 35,
+      "unit": "°C",
+      "sourceId": "ecocrop-tomato-1379"
+    },
+    "waterRequirements": {
+      "kcInitial": 0.6,
+      "kcMid": 1.15,
+      "kcEnd": 0.8,
+      "stageDays": [
+        30,
+        40,
+        45,
+        30
+      ],
+      "context": "Apr/May Mediterranean; 0.80 end coefficient is the Solanaceae table reference within tomato 0.70-0.90 range",
+      "sourceId": "fao56-tables11-12",
+      "units": {
+        "kc": "dimensionless",
+        "stageDays": "days"
+      },
+      "status": "reference_profile_not_locally_calibrated"
+    },
+    "salinityTolerance": {
+      "status": "unavailable",
+      "note": "A compatible Maas–Hoffman ECe threshold and slope have not been verified."
+    },
+    "rootCharacteristics": null,
+    "nutrientRequirements": {
+      "status": "unavailable",
+      "note": "No compatible regional, method-specific soil-test thresholds are configured."
+    },
+    "rotationConsiderations": {
+      "avoidAfterFamilies": [
+        "Solanaceae"
+      ],
+      "note": "Repeated Solanaceae may share pests; local return intervals are needed."
+    },
+    "cultivarOrManagementContext": "Species-level ranges do not represent every cultivar or local production system.",
+    "dataSources": [
+      {
+        "id": "ecocrop-tomato-1379",
+        "organization": "FAO",
+        "url": "https://ecocrop.apps.fao.org/ecocrop/srv/en/dataSheet?id=1379",
+        "context": "Species-level ECOCROP record",
+        "methodology": "Descriptive environmental ranges",
+        "version": "accessed 2026-11",
+        "limitations": "Not a cultivar-specific response curve."
+      },
+      {
+        "id": "fao56-tables11-12",
+        "organization": "FAO",
+        "context": "FAO-56 Tables 11-12: reference crop stages and coefficients",
+        "url": "https://www.fao.org/4/X0490E/x0490e0b.htm"
+      }
+    ],
+    "parameterVersion": "1.1",
+    "confidenceFlags": {
+      "ph": "verified-reference",
+      "temperature": "verified-reference",
+      "plantingWindow": "prototype",
+      "water": "reference profile; local calibration required",
+      "salinity": "missing"
+    }
+  },
+  {
+    "id": "potato",
+    "commonName": "Potato",
+    "scientificName": "Solanum tuberosum",
+    "family": "Solanaceae",
+    "category": "root",
+    "plantingWindow": {
+      "months": [
+        1,
+        2,
+        3,
+        9,
+        10,
+        11
+      ],
+      "status": "prototype-assumption",
+      "sourceId": null
+    },
+    "growthDurationDays": {
+      "minimum": 90,
+      "maximum": 160,
+      "sourceId": "ecocrop-potato-1971"
+    },
+    "soilRequirements": {
+      "ph": {
+        "minimum": 4.2,
+        "optimalLow": 5,
+        "optimalHigh": 6.2,
+        "maximum": 8.5,
+        "unit": "pH",
+        "sourceId": "ecocrop-potato-1971"
+      },
+      "salinity": {
+        "eceThreshold": null,
+        "slopePercentPerDsM": null,
+        "unit": "dS/m ECe",
+        "sourceId": null
+      },
+      "texture": {
+        "preferred": [
+          "medium",
+          "organic"
+        ],
+        "sourceId": "ecocrop-potato-1971"
+      }
+    },
+    "temperatureRequirements": {
+      "minimum": 7,
+      "optimalLow": 15,
+      "optimalHigh": 25,
+      "maximum": 30,
+      "unit": "°C",
+      "sourceId": "ecocrop-potato-1971"
+    },
+    "waterRequirements": {
+      "kcInitial": 0.5,
+      "kcMid": 1.15,
+      "kcEnd": 0.75,
+      "stageDays": [
+        30,
+        35,
+        50,
+        30
+      ],
+      "context": "April Europe; mature potato",
+      "sourceId": "fao56-tables11-12",
+      "units": {
+        "kc": "dimensionless",
+        "stageDays": "days"
+      },
+      "status": "reference_profile_not_locally_calibrated"
+    },
+    "salinityTolerance": {
+      "status": "unavailable",
+      "note": "ECOCROP's qualitative salinity class is not a Maas–Hoffman threshold and slope."
+    },
+    "rootCharacteristics": null,
+    "nutrientRequirements": {
+      "status": "unavailable",
+      "note": "No compatible regional, method-specific soil-test thresholds are configured."
+    },
+    "rotationConsiderations": {
+      "avoidAfterFamilies": [
+        "Solanaceae"
+      ],
+      "note": "Avoid immediate repetition of the same family unless locally reviewed."
+    },
+    "cultivarOrManagementContext": "Cultivar, seed health and disease constraints remain local.",
+    "dataSources": [
+      {
+        "id": "ecocrop-potato-1971",
+        "organization": "FAO",
+        "url": "https://ecocrop.apps.fao.org/ecocrop/srv/en/dataSheet?id=1971",
+        "context": "Species-level ECOCROP record",
+        "methodology": "Descriptive environmental ranges",
+        "version": "accessed 2026-11",
+        "limitations": "Broad environmental ranges, not field validation."
+      },
+      {
+        "id": "fao56-tables11-12",
+        "organization": "FAO",
+        "context": "FAO-56 Tables 11-12: reference crop stages and coefficients",
+        "url": "https://www.fao.org/4/X0490E/x0490e0b.htm"
+      }
+    ],
+    "parameterVersion": "1.1",
+    "confidenceFlags": {
+      "ph": "verified-reference",
+      "temperature": "verified-reference",
+      "plantingWindow": "prototype",
+      "water": "reference profile; local calibration required",
+      "salinity": "missing"
+    }
+  },
+  {
+    "id": "bean",
+    "commonName": "Common bean",
+    "scientificName": "Phaseolus vulgaris",
+    "family": "Fabaceae",
+    "category": "legume",
+    "plantingWindow": {
+      "months": [
+        3,
+        4,
+        5,
+        8,
+        9
+      ],
+      "status": "prototype-assumption",
+      "sourceId": null
+    },
+    "growthDurationDays": {
+      "minimum": 50,
+      "maximum": 270,
+      "sourceId": "ecocrop-bean-1668"
+    },
+    "soilRequirements": {
+      "ph": {
+        "minimum": 4,
+        "optimalLow": 5.5,
+        "optimalHigh": 7.5,
+        "maximum": 9,
+        "unit": "pH",
+        "sourceId": "ecocrop-bean-1668"
+      },
+      "salinity": {
+        "eceThreshold": null,
+        "slopePercentPerDsM": null,
+        "unit": "dS/m ECe",
+        "sourceId": null
+      },
+      "texture": {
+        "preferred": [
+          "medium",
+          "organic"
+        ],
+        "sourceId": "ecocrop-bean-1668"
+      }
+    },
+    "temperatureRequirements": {
+      "minimum": 7,
+      "optimalLow": 16,
+      "optimalHigh": 25,
+      "maximum": 32,
+      "unit": "°C",
+      "sourceId": "ecocrop-bean-1668"
+    },
+    "waterRequirements": {
+      "kcInitial": 0.5,
+      "kcMid": 1.05,
+      "kcEnd": 0.9,
+      "stageDays": [
+        20,
+        30,
+        30,
+        10
+      ],
+      "context": "Feb/Mar California and Mediterranean; green beans",
+      "sourceId": "fao56-tables11-12",
+      "units": {
+        "kc": "dimensionless",
+        "stageDays": "days"
+      },
+      "status": "reference_profile_not_locally_calibrated"
+    },
+    "salinityTolerance": {
+      "status": "unavailable",
+      "note": "A qualitative salinity class is not used as a quantitative yield-response slope."
+    },
+    "rootCharacteristics": null,
+    "nutrientRequirements": {
+      "status": "unavailable",
+      "note": "Legume nitrogen effects depend on nodulation, conditions and management."
+    },
+    "rotationConsiderations": {
+      "avoidAfterFamilies": [
+        "Fabaceae"
+      ],
+      "note": "Family change alone does not guarantee pest or disease control."
+    },
+    "cultivarOrManagementContext": "Ranges span several common-bean production types and cultivars.",
+    "dataSources": [
+      {
+        "id": "ecocrop-bean-1668",
+        "organization": "FAO",
+        "url": "https://ecocrop.apps.fao.org/ecocrop/srv/en/dataSheet?id=1668",
+        "context": "Species-level ECOCROP record",
+        "methodology": "Descriptive environmental ranges",
+        "version": "accessed 2026-11",
+        "limitations": "Broad species-level reference."
+      },
+      {
+        "id": "fao56-tables11-12",
+        "organization": "FAO",
+        "context": "FAO-56 Tables 11-12: reference crop stages and coefficients",
+        "url": "https://www.fao.org/4/X0490E/x0490e0b.htm"
+      }
+    ],
+    "parameterVersion": "1.1",
+    "confidenceFlags": {
+      "ph": "verified-reference",
+      "temperature": "verified-reference",
+      "plantingWindow": "prototype",
+      "water": "reference profile; local calibration required",
+      "salinity": "missing"
+    }
+  },
+  {
+    "id": "wheat",
+    "commonName": "Wheat",
+    "scientificName": "Triticum aestivum",
+    "family": "Poaceae",
+    "category": "grain",
+    "plantingWindow": {
+      "months": [
+        10,
+        11,
+        12
+      ],
+      "status": "prototype-assumption",
+      "sourceId": null
+    },
+    "growthDurationDays": {
+      "minimum": 90,
+      "maximum": 250,
+      "sourceId": "ecocrop-wheat-2114"
+    },
+    "soilRequirements": {
+      "ph": {
+        "minimum": 5.5,
+        "optimalLow": 6,
+        "optimalHigh": 7,
+        "maximum": 8.5,
+        "unit": "pH",
+        "sourceId": "ecocrop-wheat-2114"
+      },
+      "salinity": {
+        "eceThreshold": null,
+        "slopePercentPerDsM": null,
+        "unit": "dS/m ECe",
+        "sourceId": null
+      },
+      "texture": {
+        "preferred": [
+          "medium",
+          "organic"
+        ],
+        "sourceId": "ecocrop-wheat-2114"
+      }
+    },
+    "temperatureRequirements": {
+      "minimum": 5,
+      "optimalLow": 15,
+      "optimalHigh": 23,
+      "maximum": 27,
+      "unit": "°C",
+      "sourceId": "ecocrop-wheat-2114"
+    },
+    "waterRequirements": {
+      "kcInitial": 0.3,
+      "kcMid": 1.15,
+      "kcEnd": 0.25,
+      "stageDays": [
+        20,
+        25,
+        60,
+        30
+      ],
+      "context": "March/April 35-45 degrees latitude; spring wheat harvested dry (not winter wheat)",
+      "sourceId": "fao56-tables11-12",
+      "units": {
+        "kc": "dimensionless",
+        "stageDays": "days"
+      },
+      "status": "reference_profile_not_locally_calibrated"
+    },
+    "salinityTolerance": {
+      "status": "unavailable",
+      "note": "ECOCROP salinity classes are not substituted for compatible crop yield-response parameters."
+    },
+    "rootCharacteristics": null,
+    "nutrientRequirements": {
+      "status": "unavailable",
+      "note": "No compatible regional, method-specific soil-test thresholds are configured."
+    },
+    "rotationConsiderations": {
+      "avoidAfterFamilies": [
+        "Poaceae"
+      ],
+      "note": "Cereal repetition can retain crop-specific disease risk."
+    },
+    "cultivarOrManagementContext": "Winter and spring wheat calendars and cold requirements differ.",
+    "dataSources": [
+      {
+        "id": "ecocrop-wheat-2114",
+        "organization": "FAO",
+        "url": "https://ecocrop.apps.fao.org/ecocrop/srv/en/dataSheet?id=2114",
+        "context": "Species-level ECOCROP record",
+        "methodology": "Descriptive environmental ranges",
+        "version": "accessed 2026-11",
+        "limitations": "Not cultivar-specific."
+      },
+      {
+        "id": "fao56-tables11-12",
+        "organization": "FAO",
+        "context": "FAO-56 Tables 11-12: reference crop stages and coefficients",
+        "url": "https://www.fao.org/4/X0490E/x0490e0b.htm"
+      }
+    ],
+    "parameterVersion": "1.1",
+    "confidenceFlags": {
+      "ph": "verified-reference",
+      "temperature": "verified-reference",
+      "plantingWindow": "prototype",
+      "water": "reference profile; local calibration required",
+      "salinity": "missing"
+    }
+  },
+  {
+    "id": "cucumber",
+    "commonName": "Cucumber",
+    "scientificName": "Cucumis sativus",
+    "family": "Cucurbitaceae",
+    "category": "vegetable",
+    "plantingWindow": {
+      "months": [
+        3,
+        4,
+        5,
+        8
+      ],
+      "status": "prototype-assumption",
+      "sourceId": null
+    },
+    "growthDurationDays": {
+      "minimum": 40,
+      "maximum": 180,
+      "sourceId": "ecocrop-cucumber-817"
+    },
+    "soilRequirements": {
+      "ph": {
+        "minimum": 4.5,
+        "optimalLow": 6,
+        "optimalHigh": 7.5,
+        "maximum": 8.7,
+        "unit": "pH",
+        "sourceId": "ecocrop-cucumber-817"
+      },
+      "salinity": {
+        "eceThreshold": null,
+        "slopePercentPerDsM": null,
+        "unit": "dS/m ECe",
+        "sourceId": null
+      },
+      "texture": {
+        "preferred": [
+          "medium",
+          "organic"
+        ],
+        "sourceId": "ecocrop-cucumber-817"
+      }
+    },
+    "temperatureRequirements": {
+      "minimum": 6,
+      "optimalLow": 18,
+      "optimalHigh": 32,
+      "maximum": 38,
+      "unit": "°C",
+      "sourceId": "ecocrop-cucumber-817"
+    },
+    "waterRequirements": {
+      "kcInitial": 0.6,
+      "kcMid": 1,
+      "kcEnd": 0.75,
+      "stageDays": [
+        20,
+        30,
+        40,
+        15
+      ],
+      "context": "June/Aug arid region; fresh-market cucumber",
+      "sourceId": "fao56-tables11-12",
+      "units": {
+        "kc": "dimensionless",
+        "stageDays": "days"
+      },
+      "status": "reference_profile_not_locally_calibrated"
+    },
+    "salinityTolerance": {
+      "status": "unavailable",
+      "note": "A verified ECe threshold and response slope are not configured."
+    },
+    "rootCharacteristics": null,
+    "nutrientRequirements": {
+      "status": "unavailable",
+      "note": "No compatible regional, method-specific soil-test thresholds are configured."
+    },
+    "rotationConsiderations": {
+      "avoidAfterFamilies": [
+        "Cucurbitaceae"
+      ],
+      "note": "Same-family repetition requires local pest and disease review."
+    },
+    "cultivarOrManagementContext": "The broad 40–180 day record reflects varied cultivars and harvest purposes.",
+    "dataSources": [
+      {
+        "id": "ecocrop-cucumber-817",
+        "organization": "FAO",
+        "url": "https://ecocrop.apps.fao.org/ecocrop/srv/en/dataSheet?id=817",
+        "context": "Species-level ECOCROP record",
+        "methodology": "Descriptive environmental ranges",
+        "version": "accessed 2026-11",
+        "limitations": "Broad crop-cycle and environmental ranges."
+      },
+      {
+        "id": "fao56-tables11-12",
+        "organization": "FAO",
+        "context": "FAO-56 Tables 11-12: reference crop stages and coefficients",
+        "url": "https://www.fao.org/4/X0490E/x0490e0b.htm"
+      }
+    ],
+    "parameterVersion": "1.1",
+    "confidenceFlags": {
+      "ph": "verified-reference",
+      "temperature": "verified-reference",
+      "plantingWindow": "prototype",
+      "water": "reference profile; local calibration required",
+      "salinity": "missing"
+    }
+  }
+]

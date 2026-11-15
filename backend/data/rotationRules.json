@@ -1,0 +1,6 @@
+{
+  "sameFamilyPenalty": 35,
+  "sameCropPenalty": 55,
+  "differentFamilyScore": 100,
+  "note": "Prototype transition indicators. Different families reduce one obvious risk but do not guarantee pest or disease control."
+}

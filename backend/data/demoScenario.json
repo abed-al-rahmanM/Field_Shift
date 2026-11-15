@@ -1,0 +1,16 @@
+{
+  "label": "Demo Mode — Illustrative Data",
+  "farm": { "name": "Cedar Ridge Demo Farm", "latitude": 34.53, "longitude": 36.05, "size": 4.2, "sizeUnit": "ha", "plantingMonth": 3, "plantingYear": 2027, "previousCrop": "tomato", "cropHistory": ["wheat", "tomato"] },
+  "soil": { "ph": 5.6, "ec": 3.0, "ecMethod": "ECe (synthetic example)", "organicMatter": 2.0, "nitrogen": 18, "nitrogenUnit": "mg/kg", "nitrogenMethod": "Nitrate-N (synthetic example)", "phosphorus": 20, "phosphorusUnit": "mg/kg", "phosphorusMethod": "Unspecified demo method", "potassium": 120, "potassiumUnit": "mg/kg", "texture": "Sandy loam" },
+  "priorities": { "irrigation": "limited", "seasonalLimitMm": 180, "profile": "soil-first", "category": "any" },
+  "climate": {
+    "source": "Synthetic hackathon demonstration", "kind": "illustrative data", "period": { "start": "2025-03-01", "end": "2025-05-31" }, "retrievedAt": null, "validDays": 92, "missingDays": 0, "observationCoveragePercent": 100,
+    "summary": { "averageTemperatureC": 18.2, "minimumTemperatureC": 4.1, "maximumTemperatureC": 31.4, "totalRainfallMm": 168.0, "averageHumidityPct": 61.0 },
+    "daily": [
+      { "date": "2025-03-01", "temperatureC": 12.5, "rainfallMm": 3.4 }, { "date": "2025-03-15", "temperatureC": 14.1, "rainfallMm": 17.2 },
+      { "date": "2025-04-01", "temperatureC": 17.8, "rainfallMm": 8.5 }, { "date": "2025-04-15", "temperatureC": 19.2, "rainfallMm": 1.1 },
+      { "date": "2025-05-01", "temperatureC": 21.5, "rainfallMm": 0.4 }, { "date": "2025-05-15", "temperatureC": 24.1, "rainfallMm": 0.0 }
+    ],
+    "provenance": { "dataset": "Synthetic scenario for judge walkthrough", "apiUrl": null, "requestedParameters": [], "requestedCoordinates": { "latitude": 34.53, "longitude": 36.05 }, "units": { "temperature": "°C", "rainfall": "mm" }, "spatialResolution": "Not applicable — synthetic fixture", "spatialNote": "Fictional values near Akkar; not NASA observations or an actual farm." }
+  }
+}
