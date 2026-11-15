@@ -1,3 +1,4 @@
+import "./env.js";
 import express from "express";
 import cors from "cors";
 import { readJson } from "./utils/data.js";
@@ -32,3 +33,6 @@ app.get("/api/crops", async (_req, res, next) => {
 });
 app.use("/api", analysisRouter, nasaRouter, soilRouter);
 app.use(errorHandler);
+
+// Vercel imports the app; src/server.js retains the local port listener.
+export default app;

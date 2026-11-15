@@ -1,0 +1,4 @@
+# Local secrets must never enter a deployment archive.
+**/.env
+**/.env.*
+!**/.env.example

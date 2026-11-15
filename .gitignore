@@ -5,3 +5,8 @@ dist/
 backend/.cache/
 backend/uploads/
 npm-debug.log*
+
+# Deployment metadata and all local environment variants
+.vercel/
+.env.*
+!.env.example
